@@ -5,9 +5,9 @@
   padding: 5px;
 }
 #show-btn {
-  position: absolute;
-  right: 4%;
-  margin-bottom: 20%;
+  margin-top: 30px;
+  margin-left: 70%;
+  margin-bottom: -20px;
   padding: 5px 10px;
 }
 .container {
@@ -27,4 +27,8 @@
   height: auto;
   width: 80%;
   box-shadow: offsetX offsetY blurRadius spreadRadius color;
+}
+#show-button {
+  cursor: pointer;
+  width: 120px;
 }
