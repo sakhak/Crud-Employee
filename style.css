@@ -94,6 +94,12 @@ table {
     width: 100%;
   }
 
+  #crud-title {
+    font-size: 27px;
+  }
+  #employees-form {
+    margin-top: -35px;
+  }
   .btn {
     font-size: 14px;
     padding: 10px;
