@@ -52,10 +52,10 @@ function renderEmployees() {
           <td>${employee.position}</td>
           <td>${employee.hiredate}</td>
           <td>
-            <button class="btn btn-success btn-sm" onclick="editEmployee(${index})">
+            <button class="btn btn-success btn-sm " style="width:90px" onclick="editEmployee(${index})">
               Edit
             </button>
-            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(${index})">
+            <button class="btn btn-danger btn-sm" style="width:90px" onclick="deleteEmployee(${index})">
               Delete
             </button>
           </td>

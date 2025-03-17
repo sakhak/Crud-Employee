@@ -24,63 +24,63 @@
         Show
       </button>
     </div>
-    <div class="container mt-5" id="container">
-      <h2 class="text-center mb-3" id="crud-title">CRUD EMPLOYEES SYSTEM</h2>
-      <!-- input form -->
-      <form action="" class="mb-4" id="employees-form">
-        <div class="form-row grid gap-0 column-gap-1">
-          <div class="form-group col-md-4">
-            <label for="employee-name">Employee name</label>
-            <input
-              type="text"
-              id="employee-name"
-              class="form-control"
-              placeholder="Enter name"
-              required
-            />
+    <!-- <center> -->
+    <div>
+      <div class="container col-9 p-5 mt-5 rounded-4 shadow-lg" id="container">
+        <h2 class="text-center mb-5" id="crud-title">CRUD EMPLOYEES SYSTEM</h2>
+        <form action="" class="mb-4" id="employees-form">
+          <div class="form-row grid gap-0 column-gap-1">
+            <div class="form-group col-md-4">
+              <label for="employee-name">Employee name</label>
+              <input
+                type="text"
+                id="employee-name"
+                class="form-control"
+                placeholder="Enter name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="employee-position">Position</label>
+              <input
+                type="text"
+                id="employee-position"
+                class="form-control"
+                placeholder="Enter position"
+                required
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="employee-hiredate">Hiredate</label>
+              <input
+                type="date"
+                id="employee-hiredate"
+                class="form-control"
+                placeholder="Enter hiredate"
+                required
+              />
+            </div>
           </div>
-          <div class="form-group col-md-4">
-            <label for="employee-position">Position</label>
-            <input
-              type="text"
-              id="employee-position"
-              class="form-control"
-              placeholder="Enter position"
-              required
-            />
-          </div>
-          <div class="form-group col-md-4">
-            <label for="employee-hiredate">Hiredate</label>
-            <input
-              type="date"
-              id="employee-hiredate"
-              class="form-control"
-              placeholder="Enter hiredate"
-              required
-            />
-          </div>
-        </div>
-        <input type="hidden" id="editting-index" />
-        <button type="submit" id="submit-btn" class="btn btn-primary">
-          Add Employee
-        </button>
-      </form>
-      <!-- Employee table -->
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th># Employee ID</th>
-            <th>EmpName</th>
-            <th>Position</th>
-            <th>Hiredate</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="employee-list">
-          <!-- list's employees  -->
-        </tbody>
-      </table>
+          <input type="hidden" id="editting-index" />
+          <button type="submit" id="submit-btn" class="btn btn-primary mt-1">
+            Add Employee
+          </button>
+        </form>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th># Employee ID</th>
+              <th>EmpName</th>
+              <th>Position</th>
+              <th>Hiredate</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="employee-list"></tbody>
+        </table>
+      </div>
     </div>
+    <!-- </center> -->
   </body>
   <script src="/action.js"></script>
 </html>

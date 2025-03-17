@@ -6,7 +6,7 @@
 }
 #show-btn {
   margin-top: 30px;
-  margin-left: 70%;
+  margin-left: 79%;
   margin-bottom: -20px;
   padding: 5px 10px;
 }
@@ -18,8 +18,8 @@
 }
 #crud-title {
   color: green;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 800;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .box-shadow {
@@ -31,4 +31,71 @@
 #show-button {
   cursor: pointer;
   width: 120px;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  #container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 576px) {
+  #show-btn {
+    text-align: center;
+  }
+
+  #show-button {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
